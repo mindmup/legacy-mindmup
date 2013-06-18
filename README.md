@@ -82,7 +82,7 @@ All JavaScript widgets are tested using Jasmine, here are two ways of running te
 
 - Visual: Open test/SpecRunner.html in a browser, this will run all Jasmine tests
 
-- Automated: Using [PhantomJs](phantomjs.org), in the test folder, run
+- Automated: Using [PhantomJs](http://phantomjs.org/), in the test folder, run
 
     sh runtests.sh
 
