@@ -17,6 +17,14 @@ function grab_remote () {
     curl $c -# -o $LOCAL_FILE --create-dirs
   done
 }
+
+function sed_exec () {
+  if hash gsed 2>/dev/null; then
+    gsed "$@"
+  else
+    sed "$@"
+  fi
+}
 rm -rf $LOCAL_RESOURCE_ROOT
 mkdir -p $LOCAL_RESOURCE_ROOT
 
@@ -32,6 +40,6 @@ for cssfile in `find $LOCAL_RESOURCE_ROOT -name '*.css'`; do
   echo processing CSS file $cssfile
   REMOTE_RESOURCES=`grep -o 'url([^)]*)' $cssfile | sed s/url//g | tr -d \'\"\)\(`
   grab_remote "$REMOTE_RESOURCES" `dirname $cssfile`
-  gsed -i 's/\(url.*\)\/\//\1/g' $cssfile
+  sed_exec -i 's/\(url.*\)\/\//\1/g' $cssfile
 done
 
