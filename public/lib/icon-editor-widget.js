@@ -35,6 +35,7 @@ MM.iconEditor = function (mapModel, resourceManager) {
 jQuery.fn.iconEditorWidget = function (iconEditor, corsProxyUrl) {
 	'use strict';
 	var self = this,
+	        form = self.find('form'),
 		confirmElement = self.find('[data-mm-role=confirm]'),
 		sizeSelect = self.find('form select[name=size]'),
 		customSizeBox = self.find('[data-mm-role=custom-size-enter]'),
@@ -118,6 +119,7 @@ jQuery.fn.iconEditorWidget = function (iconEditor, corsProxyUrl) {
 		}
 	});
 	this.on('show', function () {
+		form.get(0).reset();
 		fileUpload.css('opacity', 0);
 	});
 	this.on('shown', function () {
