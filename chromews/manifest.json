@@ -1,21 +1,21 @@
 {
-  "name": "MindMup - Free Mind Map web site",
+  "name": "MindMup (legacy version)",
   "short_name": "MindMup",
-  "description": "Free online mind mapping. Google Drive or Dropbox mindmap storage, realtime collaborative mindmapping, Freemind mind map import",
-  "version": "0.0.0.18",
+  "description": "This is a legacy version of mindmup. Upgrade to latest version at https://www.mindmup.com",
+  "version": "0.0.0.19",
   "manifest_version": 2,
   "container" : ["DOMAIN_INSTALLABLE", "GOOGLE_DRIVE"],
   "api_console_project_id" : "399581875395",
   "gdrive_mime_types": {
     "http://drive.google.com/intents/opendrivedoc": [{ 
         "type": ["application/vnd.mindmup.collab", "application/vnd-freemind", "application/json", "application/vnd.google.drive.ext-type.mup","application/x-freemind","application/vnd.google.drive.ext-type.mm"],
-        "href": "https://www.mindmup.com/",
+        "href": "https://legacy.mindmup.com/",
         "title" : "Open",
         "disposition" : "window"
       }
     ]
   },
-  "icons":{"128":"icon_128.png"},"app":{"urls":["https://www.mindmup.com/"],"launch":{"web_url":"https://www.mindmup.com/"}},
+  "icons":{"128":"icon_128.png"},"app":{"urls":["https://legacy.mindmup.com/"],"launch":{"web_url":"https://legacy.mindmup.com/"}},
   "permissions": [
     "unlimitedStorage"
   ]
