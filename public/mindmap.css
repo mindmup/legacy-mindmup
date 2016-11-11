@@ -12,7 +12,7 @@ html, body {
   margin-right: 20px;
 }
 .logo {
- background-image:url('//static.mindmup.com/img/logo_32.png');
+ background-image:url('img/logo_32.png');
  background-position:left center;
  background-repeat:no-repeat;
  width: 0px;
@@ -22,7 +22,7 @@ html, body {
   padding-bottom: 5px;
 }
 #logo-img {
- background-image:url('//static.mindmup.com/img/logo_32.png');
+ background-image:url('img/logo_32.png');
  background-position:left center;
  background-repeat:no-repeat;
  width: 40px;
@@ -192,19 +192,19 @@ div.colorPicker-picker { display: inline; float: left; background: none }
 .repo {
 	background-repeat: no-repeat;
 	background-position:left center;
-	background-image: url('//static.mindmup.com/img/logo_16.png');
+	background-image: url('img/logo_16.png');
 }
 .repo-a {
-	background-image: url('//static.mindmup.com/img/logo_16.png');
+	background-image: url('img/logo_16.png');
 }
 .repo-b {
-	background-image: url('//static.mindmup.com/img/logo_gold_16.png');
+	background-image: url('img/logo_gold_16.png');
 }
 .repo-p {
-	background-image: url('//static.mindmup.com/img/logo_gold_private_16.png');
+	background-image: url('img/logo_gold_private_16.png');
 }
 .repo-g {
-	background-image: url('//static.mindmup.com/img/google_drive.png');
+	background-image: url('img/google_drive.png');
 }
 .repo-menuitem {
 	background-position: 14px center;
