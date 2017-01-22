@@ -1,14 +1,14 @@
 {
-  "name": "MindMup (legacy version)",
-  "short_name": "MindMup",
+  "name": "Legacy MindMup (discontinued)",
+  "short_name": "Legacy MindMup",
   "description": "This is a legacy version of mindmup. Upgrade to latest version at https://www.mindmup.com",
-  "version": "0.0.0.19",
+  "version": "0.0.0.20",
   "manifest_version": 2,
   "container" : ["DOMAIN_INSTALLABLE", "GOOGLE_DRIVE"],
   "api_console_project_id" : "399581875395",
   "gdrive_mime_types": {
     "http://drive.google.com/intents/opendrivedoc": [{ 
-        "type": ["application/vnd.mindmup.collab", "application/vnd-freemind", "application/json", "application/vnd.google.drive.ext-type.mup","application/x-freemind","application/vnd.google.drive.ext-type.mm"],
+        "type": ["application/vnd.mindmup.collab", "application/vnd.google.drive.ext-type.mup"],
         "href": "https://legacy.mindmup.com/",
         "title" : "Open",
         "disposition" : "window"
