@@ -50,6 +50,13 @@ execute:
     bundle install
     foreman start
 
+For offline use You also need to either setup your own CDN (see [issue 69](https://github.com/mindmup/mindmup/issues/69)) or deploy the ```content/{img,font,<datetimestamp>}``` folders from [the static.mindmup.com repo](https://github.com/mindmup/static.mindmup.com) to ```public/``` here. i.e. 
+* clone or checkout https://github.com/mindmup/static.mindmup.com,
+* cd to that checkout and run ```sh pack.sh```. 
+* Then copy with ```cp -pr content/{img,font,20*} <path to mindmup>/public``` (NB: do this before the year 2100 or the command won't work).
+* Then edit ```web.rb``` and set ```public_host``` to ```0.0.0.0:5000``` and ```static_ts``` to the output of the command ```(cd public && echo 20*|sort|tail -n1))```.
+* Finally restart the mindmup server ```foreman start```.
+
 See [Heroku Configiration Local Setup](https://devcenter.heroku.com/articles/config-vars#local-setup) for more information.
 
 Note: Unless RACK_ENV is production, Google analytics is not used, the analytics information is instead logged to the JavaScript console.

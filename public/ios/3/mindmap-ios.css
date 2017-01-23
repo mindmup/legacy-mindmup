@@ -12,28 +12,28 @@ body.ios-wkwebview {
   padding: 0;
 }
 .repo-a {
-	background-image: url('//static.mindmup.com/img/logo_16.png');
+	background-image: url('img/logo_16.png');
 }
 .repo-b {
-	background-image: url('//static.mindmup.com/img/logo_gold_16.png');
+	background-image: url('img/logo_gold_16.png');
 }
 .repo-p {
-	background-image: url('//static.mindmup.com/img/logo_gold_private_16.png');
+	background-image: url('img/logo_gold_private_16.png');
 }
 .repo-g {
-	background-image: url('//static.mindmup.com/img/google_drive.png');
+	background-image: url('img/google_drive.png');
 }
 .repo-o {
-	background-image: url('//static.mindmup.com/img/offline.png');
+	background-image: url('img/offline.png');
 }
 .chrome .repo-o {
-	background-image: url('//static.mindmup.com/img/offline-chrome.png');
+	background-image: url('img/offline-chrome.png');
 }
 .safari .repo-o {
-	background-image: url('//static.mindmup.com/img/offline-safari.png');
+	background-image: url('img/offline-safari.png');
 }
 .gecko .repo-o {
-	background-image: url('//static.mindmup.com/img/offline-firefox.png');
+	background-image: url('img/offline-firefox.png');
 }
 
 a.repo, a.repo, a.repo {
