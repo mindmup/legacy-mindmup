@@ -3999,7 +3999,9 @@ MAPJS.DOMRender.viewController = function (mapModel, stageElement, touchEnabled,
 				}
 				nodeAtDrop = mapModel.getNodeIdAtPosition(stageDropCoordinates.x, stageDropCoordinates.y);
 				finalPosition = stagePositionForPointEvent({pageX: evt.finalPosition.left, pageY: evt.finalPosition.top});
-				if (nodeAtDrop && nodeAtDrop !== node.id) {
+				if (!finalPosition) {
+					dropResult = false;
+				} else if (nodeAtDrop && nodeAtDrop !== node.id) {
 					dropResult = mapModel.dropNode(node.id, nodeAtDrop, !!isShift);
 				} else if (node.level > 1) {
 					finalPosition.width = element.outerWidth();
